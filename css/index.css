@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: 200vh; */
+  background-color: #fafafa;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 200px;
+}
+header .container{
+  width: fit-content;
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+header h2{
+  font-size: 36.5px;
+  font-weight: 200;
+  margin-bottom: 0px;
+}
+header h1{
+  margin-top: 10px;
+  font-size: 36.5px;
+  font-weight: 600;
+  margin-bottom: 19px;
+}
+header p {
+  width: 520px;
+  line-height: 1.7;
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+}
+/* ----------------------- */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: 1090px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.landing .box {
+  /* background-color: rgb(204, 192, 192); */
+  background-color: white;
+  width: calc((100% - 270px) / 3);
+  padding: 30px;
+  box-shadow: 1px 5px 19px -7px #0000005b;
+  border-radius: 8px;
+}
+.landing .box:nth-child(1) {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.landing .box:nth-child(2) {
+  /* margin-top: -10px; */
+  border-top: 4px solid hsl(0, 78%, 62%);
+  transform: translateY(calc(-50% - 15px));
+}
+.landing .box:nth-child(3) {
+  border-top: 4px solid hsl(212, 86%, 64%);
+
+}
+.landing .box:nth-child(4) {
+  /* margin-top: -10px; */
+  transform: translateY(calc(-50% - 15px));
+  border-top: 4px solid hsl(34, 97%, 64%);
+
+}
+.landing .box h3 {
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 15px;
+}
+.landing .box p {
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.landing .box div {
+  text-align: end;
+}
+@media (max-width:375px) {
+  .landing .box:nth-child(2),
+  .landing .box:nth-child(4) {
+    transform: translateY(0);
+  }
+  .landing .content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .landing .content .box{
+    width: 100%;
+    padding: 20px;
+  }
+  .landing .box:nth-child(4) {
+    order: 3;
+  }
+  .landing .box:nth-child(3) {
+    order: 4;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  header {
+    margin-bottom: 70px;
+  }
+  header h2 {
+    font-size: 25px;
+    
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p {
+    width: 100%;
+  }
+}
